@@ -1,14 +1,12 @@
 #include <iostream>
-
 using namespace std;
 
-// 加法函数
 int add(int a, int b) {
 
   // 递归终止条件
   if(b == 0) return a;
 
-  // 无进位相加
+  // 无进位
   int sum = a ^ b;
 
   // 进位
@@ -23,8 +21,8 @@ int main() {
 
   int a ; 
   int b ; 
-  cin>>a>>b;
-  // 调用递归函数
+  cout << "输入加数" << endl;
+  cin >> a >> b;
   int res = add(a, b);
 
   // 输出结果
